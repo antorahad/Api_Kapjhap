@@ -9,20 +9,34 @@ document.getElementById('fetchData').addEventListener('click', function(){
 
 
     function user(userData){
-        console.log(userData);
-    }
-});
 
-document.getElementById('fetchPhoto').addEventListener('click', function(){
-    const url = 'https://jsonplaceholder.typicode.com/photos'
+       const userId = document.getElementById('users-id'); 
 
-    fetch(url)
+       const userName = document.getElementById('users-name');
 
-    .then(res => res.json())
+       const userEmail = document.getElementById('users-email');
 
-    .then(photo => fetchPhoto(photo));
+       for(const user of userData){
 
-    function fetchPhoto(photo){
-        console.log(photo);
+            const liOne = document.createElement('li');
+
+            liOne.innerText = user.username;
+
+            userName.appendChild(liOne);
+
+
+            const liTwo = document.createElement('li');
+
+            liTwo.innerText = user.id;
+
+            userId.appendChild(liTwo);
+
+
+            const liThree = document.createElement('li');
+
+            liThree.innerText = user.email;
+
+            userEmail.appendChild(liThree);
+       }
     }
 });

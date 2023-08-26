@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <button id="fetchData">Fetch Users</button>
+    <section class="container">
+        <div>
+            <ul id="users-id"></ul>
+        </div>
+        <div>
+            <ul id="users-name"></ul>
+        </div>
 
-        <button id="fetchPhoto">Fetch Photo</button>
+        <div>
+            <ul id="users-email"></ul>
+        </div>
+    </section>
+
+
+    <section>
+        <button id="fetchData">Fetch UserData</button>
     </section>
     <script src="../fetch data/app.js"></script>
 </body>
