@@ -1,16 +1,16 @@
-function loadPosts(){
+function loadPosts() {
     fetch('https://jsonplaceholder.typicode.com/posts')
 
-    .then(res => res.json())
+        .then(res => res.json())
 
-    .then(data => getPost(data));
+        .then(data => getPost(data));
 }
 
 
-function getPost (posts){
+function getPost(posts) {
     const postContainer = document.getElementById('post-container');
 
-    for(const post of posts){
+    for (const post of posts) {
         const div = document.createElement('div');
 
         div.innerHTML = `
@@ -26,3 +26,6 @@ function getPost (posts){
 }
 
 loadPosts();
+
+
+
