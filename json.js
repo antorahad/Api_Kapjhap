@@ -46,3 +46,8 @@ console.log(typeof shopJson);
 const shopObj = JSON.parse(shopJson);
 
 console.log(shopObj);
+
+
+
+const stuInfo = JSON.stringify({ name: "James", roll: 3 }); 
+console.log(stuInfo.name);

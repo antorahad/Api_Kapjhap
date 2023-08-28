@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting Phone Api</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <h2 class="text-[45px] font-[700]">Hauting Phone</h2>
+    </header>
+
+    <main class="container mx-auto">
+        <section>
+            <input id="search-input" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+            <button class="btn btn-primary" onclick="searchHandler()">Search</button>
+        </section>
+
+        <section>
+            <div class="grid grid-cols-3 gap-[15px]" id="phone-container">
+    
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../Haunting phone/app.js"></script>
+</body>
+
+</html>
