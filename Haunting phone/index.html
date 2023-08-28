@@ -19,11 +19,23 @@
         <section>
             <input id="search-input" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
             <button class="btn btn-primary" onclick="searchHandler()">Search</button>
+
+
+            <!--<input id="search-input2" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+            <button class="btn btn-primary" onclick="searchHandler2()">Search</button>-->
         </section>
 
         <section>
+
+            <div id="loading" class="text-center mt-8 hidden">
+                <span class="loading loading-bars text-primary loading-md"></span>
+            </div>
+
             <div class="grid grid-cols-3 gap-[15px]" id="phone-container">
-    
+            </div>
+
+            <div class="my-[20px] hidden" id="show-all-container">
+                <button class="btn btn-primary" onclick="showAll()">Show All</button>
             </div>
         </section>
     </main>
