@@ -17,7 +17,8 @@
 
     <main class="container mx-auto">
         <section>
-            <input id="search-input" type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
+            <input id="search-input" type="text" placeholder="Search here"
+                class="input input-bordered w-full max-w-xs" />
             <button class="btn btn-primary" onclick="searchHandler()">Search</button>
 
 
@@ -34,10 +35,25 @@
             <div class="grid grid-cols-3 gap-[15px]" id="phone-container">
             </div>
 
-            <div class="my-[20px] hidden" id="show-all-container">
+            <div class="my-[20px] hidden text-center" id="show-all-container">
                 <button class="btn btn-primary" onclick="showAll()">Show All</button>
             </div>
         </section>
+
+
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_detailes_modal" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <h3 id="show-detail-phone-name" class="font-bold text-lg"></h3>
+               <div id="show-detail-container">
+
+               </div>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
     </main>
 
     <footer>
